@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    >
+    <ImageView
+        android:id="@+id/home_item_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/ic_canyin_fs"
+        />
+    <TextView
+        android:id="@+id/home_item_text"
+        android:text="利息收入"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/home_item_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/home_item_beizhu"
+        android:text="ahuziyihe"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/home_item_image"
+        android:layout_below="@+id/home_item_text"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/home_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥ 12"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"
+        />
+    <TextView
+        android:id="@+id/home_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/home_item_price"
+        android:text="今天 12:10"
+        android:textSize="12sp"
+        />
+</RelativeLayout>

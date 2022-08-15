@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    >
+    <TextView
+        android:id="@+id/home_item_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="本月支出"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/home_item_zhichu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥ 800"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/home_item_word"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/home_item_shouru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_item_zhichu"
+        android:layout_marginTop="5dp"
+        android:text="本月收入 ￥12345"
+        android:textSize="12sp"
+        />
+
+    <ImageView
+        android:id="@+id/home_item_btn_eye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/home_item_zhichu"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/ih_show" />
+    <TextView
+        android:id="@+id/home_item_yusuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_item_zhichu"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/home_item_shouru"
+        android:text="预算剩余 ￥1192.1"
+        android:textSize="12sp"
+        />
+        <TextView
+            android:id="@+id/home_item_qushi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ih_biaoge"
+            android:text="查看图标分析"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:drawablePadding="10dp"
+            android:layout_below="@+id/home_item_yusuan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/green_006400"
+            />
+    <TextView
+        android:id="@+id/home_item_top_day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_item_qushi"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="今日支出 ￥12121 收入 ￥34234"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        />
+</RelativeLayout>
